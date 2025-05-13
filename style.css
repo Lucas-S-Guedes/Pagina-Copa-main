@@ -1,0 +1,275 @@
+
+td { background-color:whitesmoke; color: rgb(92, 6, 50); font-size: 120%;}
+th{ text-align: center; background-color: rgb(92, 6, 50); color: white; font-family: quatar2022; font-size: larger;}
+li{font-size: 130%;} 
+ /* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 60px;
+    background-color:rgb(232, 227, 227);
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 60px; /* para navbar fixa */
+}
+
+/* Navbar fixa */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navpr {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navpr li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navpr li a:hover {
+    color: #757575;
+}
+
+/* Botão de menu hamburguer */
+.menu-toggle {
+    position: relative;
+    margin-left: auto;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.target {
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.common {
+    background-color: white;
+    height: 4px;
+    border-radius: 2px;
+}
+
+/* Menu de grupos */
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 6px;
+    min-width: 180px;
+    z-index: 1001;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+input[type="checkbox"]:checked ~ .menu-content {
+    display: flex;
+}
+
+.menu-content h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    margin: 6px 0;
+    font-size: 15px;
+    transition: background 0.3s, padding-left 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.menu-content a:hover {
+    background-color: #444;
+    padding-left: 15px;
+}
+
+.menu-content i {
+    margin-right: 8px;
+    color: #f4f4f4;
+}
+
+/* Conteúdo */
+main {
+    padding: 40px 20px;
+}
+
+.conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.conteudo p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    max-width: 700px;
+}
+
+
+section {
+    padding: 40px 20px;
+}
+
+
+a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #005f99;
+}
+
+main > * + * {
+    margin-top: 30px;
+}
+
+#img_tabela {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+    /* Navbar fixa no topo */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #550000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+
+    .navpr {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navpr li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Botão menu hamburguer */
+    .menu-toggle {
+        position: relative;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .target {
+        cursor: pointer;
+        width: 30px;
+        height: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .common {
+        background-color: white;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    .menu-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 150px;
+        z-index: 1001;
+        flex-direction: column;
+    }
+
+    input[type="checkbox"]:checked ~ .menu-content {
+        display: flex;
+    }
+
+    .menu-content a {
+        color: white;
+        text-decoration: none;
+        margin: 5px 0;
+    }
+
+    .menu-content h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+
+
