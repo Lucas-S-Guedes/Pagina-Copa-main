@@ -6,6 +6,6 @@ Mateus Noleto(MateusNoleto), Mateus  Rodrigues da Silva(Mateus-rccb).🎓
 
 🔎Nesse Projeto foram usadas as seguintes linguagens:
 
-HTML CSS Bootstrap JS
+HTML CSS Bootstrap
 
 📃Projeto final: https://lucas-s-guedes.github.io/Pagina-Copa-main/
